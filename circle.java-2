@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Circle {
+    double r;
+    Circle(){
+        r=0;
+    }
+    Circle(double r) {
+        this.r = r;
+    }
+    double area() {
+        return (22 / 7.0) * r * r;
+    }
+    void setCircle(double r) {
+        this.r = r;
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Circle c1 = new Circle();
+        System.out.println("Area of the 1st circle is: " + c1.area());
+        Circle c2 = new Circle(5.5);
+        System.out.println("Area of the 2nd circle is: " + c2.area());
+    }
+}
